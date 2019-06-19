@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Name: Riley, Peter and Quinn
+ * Date: June 18th, 2019
+ * Description: A tower defense game where you try to eat angry food to protect a sacred fridge
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,28 +27,39 @@ namespace hungaryTDv2
     {
         public Point Location;
         public int towerType;
-        Rectangle towerRect;
-        Rectangle bullet = new Rectangle();
-        Polygon hitBox = new Polygon();
-        Canvas cBackground;
-        Canvas cObstacles;
-        Canvas cEnemies;
-        int[] positions;
-        Point[] track;
-        List<int> targets = new List<int>();
-        List<Shape> hits = new List<Shape>();
-        int range;
-        int bSpeed = 10;
+        public Rectangle towerRect;
+        public Rectangle bullet = new Rectangle();
+        public Polygon hitBox = new Polygon();
+        public Canvas cBackground;
+        public Canvas cObstacles;
+        public Canvas cEnemies;
+        public int[] positions;
+        public Point[] track;
+        public List<int> targets = new List<int>();
+        public List<Shape> hits = new List<Shape>();
+        public int range;
+        public int bSpeed = 10;
         public int damage;
         public bool shooting = false;
-        double xMove;
-        double yMove;
-        BitmapImage bi;
-        double totalMove;
-        Rectangle[] famBullets = new Rectangle[8];
-        Polygon[] famHitboxes = new Polygon[8];
-        double[] famXMove = new double[8];
-        double[] famYMove = new double[8];
+        public double xMove;
+        public double yMove;
+        public BitmapImage bi;
+        public double totalMove;
+        public Rectangle[] famBullets = new Rectangle[8];
+        public Polygon[] famHitboxes = new Polygon[8];
+        public double[] famXMove = new double[8];
+        public double[] famYMove = new double[8];
+        /// <summary>
+        /// Description: Creates an instance of the tower class. Chooses targets upon placement
+        /// Author: Riley and Peter
+        /// </summary>
+        /// <param name="tT"></param>
+        /// <param name="cBack"></param>
+        /// <param name="cO"></param>
+        /// <param name="p"></param>
+        /// <param name="t"></param>
+        /// <param name="l"></param>
+        /// <param name="cE"></param>
         public Tower(int tT, Canvas cBack, Canvas cO, int[] p, Point[] t, Point l, Canvas cE)
         {
             towerType = tT;
@@ -159,6 +175,11 @@ namespace hungaryTDv2
                 }
             }
         }
+        /// <summary>
+        /// Description: Runs every game tick, has two modes, shooting and drawing. When drawing it picks a target, then moves the bullet until it hits that target, taking input hit tests along the way. It only allows an enemy to be dealt damage once
+        /// Author: Peter and Riley
+        /// </summary>
+        /// <returns></returns>
         public List<Shape> Shoot()
         {
             Point target;

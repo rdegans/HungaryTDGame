@@ -1,7 +1,7 @@
 ﻿/*
  * Name: Riley, Peter and Quinn
- * Date: 
- * 
+ * Date: June 18th, 2019
+ * Description: A tower defense game where you try to eat angry food to protect a sacred fridge
  */
 using System;
 using System.Collections.Generic;
@@ -58,6 +58,10 @@ namespace hungaryTDv2
         public string[] levelMessages = new string[10];
         public Random rand = new Random();
         public Ellipse tempCirc;
+        /// <summary>
+        /// Description: Initializes component
+        /// Author: Quinn and Riley
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -135,7 +139,12 @@ namespace hungaryTDv2
             }
 
         }
-
+        /// <summary>
+        /// Description: Sets up game timer and the two game states. Store, where you buy and play, where you play. Has cases for getting money, fridge damage, placing towers and bug detection
+        /// Author: Quinn, Peter and Riley
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GameTimer_Tick(object sender, EventArgs e)
         {
             if (gameState == GameState.store)
@@ -292,7 +301,12 @@ namespace hungaryTDv2
                 }
             }
         }
-
+        /// <summary>
+        /// Description: Click event for the start button. Initializes component and starts game timer
+        /// Author: Riley and Quinn
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
             gameTimer.Tick += GameTimer_Tick;
@@ -411,6 +425,12 @@ namespace hungaryTDv2
             lblMoney.Content = "$ " + money;
             cBackground.Children.Add(lblMoney);
         }
+        /// <summary>
+        /// Description: Displays the instructions
+        /// Author: Riley
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnInstruct_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("The land of Hungary is in trouble, they are under attack from angry food. Luckiliy the citizens of Hungary are very hungry. \n\n" +
@@ -420,7 +440,13 @@ namespace hungaryTDv2
                             "If you change your mind when buying, just drop the tower anywhere it's red. If you want pause the game, click to buy a tower. \n\n" +
                             "Information about towers can be found beside them. Information about enemies is for you to find.");
         }
-            private void iconsClick(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Description: Starts the buying process and double as pause button
+        /// Author: Riley, Peter and Quinn
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void iconsClick(object sender, RoutedEventArgs e)
         {
             if (gameState != GameState.store)
             {

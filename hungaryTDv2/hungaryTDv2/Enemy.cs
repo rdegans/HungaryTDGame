@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Name: Riley, Peter and Quinn
+ * Date: June 18th, 2019
+ * Description: A tower defense game where you try to eat angry food to protect a sacred fridge
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +37,15 @@ namespace hungaryTDv2
         public int[] positions;
         public int reward;
         public int position = 0;
+        /// <summary>
+        /// Description: Creates an instance of the enemy class with different characteristics based on the enemy type
+        /// Author: Riley
+        /// </summary>
+        /// <param name="ty"></param>
+        /// <param name="cE"></param>
+        /// <param name="cB"></param>
+        /// <param name="tr"></param>
+        /// <param name="p"></param>
         public Enemy(int ty, Canvas cE, Canvas cB, Point[] tr, int[] p)
         {
             type = (Type)ty;
@@ -89,6 +103,12 @@ namespace hungaryTDv2
             cBackground.Children.Remove(cEnemies);
             cBackground.Children.Add(cEnemies);
         }
+        /// <summary>
+        /// Description: Updates the enemies every game tick. Moves them along the track, making sure that they don't overlap and moving only by the speed amount. When the enemy is off the track it returns the damage and removes it. Otherwise it returns null
+        /// Author: Riley
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
         public int update(int index)
         {
             positions[position] = -1;//sets current position to -1 or vacant
