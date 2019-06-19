@@ -1,0 +1,15 @@
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\hungaryTDv2.csprojAssemblyReference.cache
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\MainWindow.g.cs
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\App.g.cs
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\hungaryTDv2_MarkupCompile.cache
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\hungaryTDv2_MarkupCompile.lref
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\bin\Debug\hungaryTDv2.exe.config
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\bin\Debug\hungaryTDv2.exe
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\bin\Debug\hungaryTDv2.pdb
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\MainWindow.baml
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\hungaryTDv2.g.resources
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\hungaryTDv2.Properties.Resources.resources
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\hungaryTDv2.csproj.GenerateResource.cache
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\hungaryTDv2.csproj.CoreCompileInputs.cache
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\hungaryTDv2.exe
+C:\Users\Riley de Gans\Documents\ICS4UR\hungaryTDv2\hungaryTDv2\obj\Debug\hungaryTDv2.pdb
